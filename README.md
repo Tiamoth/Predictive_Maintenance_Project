@@ -45,4 +45,4 @@ The best part of the project was seeing *why* the model worked. By plotting the 
 * My custom-engineered feature, **`power`**, was the **3rd most important predictor** of failure.
 * `Rotational speed` and `Torque` were the top two, proving that the physical forces on the machine are the clearest indicators of failure.
 
-![Feature Importance Chart](training_plots.png)
+![Feature Importance Chart](Feature_importance_plot.png)
