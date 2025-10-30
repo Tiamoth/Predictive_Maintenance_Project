@@ -20,14 +20,14 @@ High Tool Wear: Similarly, tool wear was a strong indicator of an impending fail
 
 2. Feature Engineering
 Using my mechatronics knowledge, I created new, more powerful features from the raw sensor data. I hypothesized that these combined features would be more predictive than the raw signals alone.
--`temp_diff` = `Process temperature [K]` - `Air temperature [K]`
--`power` = `Torque [Nm]` * `Rotational speed [rpm]`
-- `tool_strain` = `Torque [Nm]` * `Tool wear [min]`
+*`temp_diff` = `Process temperature [K]` - `Air temperature [K]`
+*`power` = `Torque [Nm]` * `Rotational speed [rpm]`
+*`tool_strain` = `Torque [Nm]` * `Tool wear [min]`
 
-3. Data Pre-processing (Handling Imbalance)
+4. Data Pre-processing (Handling Imbalance)
 The dataset was **highly imbalanced** (96.6% healthy vs. 3.4% failure). A model trained on this would just learn to "always guess healthy." To fix this, I used the SMOTE (Synthetic Minority Over-sampling Technique) to oversample the rare "failure" cases in the training data, creating a balanced dataset for the model to learn from.
 
-4. Modeling
+5. Modeling
 I trained a `RandomForestClassifier` on the balanced, scaled, and engineered data. I chose this model because it is powerful, non-linear, and can provide feature importance scores.
 
 
