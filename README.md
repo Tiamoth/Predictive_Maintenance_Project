@@ -20,8 +20,8 @@ High Tool Wear: Similarly, tool wear was a strong indicator of an impending fail
 
 2. Feature Engineering
 Using my mechatronics knowledge, I created new, more powerful features from the raw sensor data. I hypothesized that these combined features would be more predictive than the raw signals alone.
- -`temp_diff` = `Process temperature [K]` - `Air temperature [K]`
- -`power` = `Torque [Nm]` * `Rotational speed [rpm]`
+-`temp_diff` = `Process temperature [K]` - `Air temperature [K]`
+-`power` = `Torque [Nm]` * `Rotational speed [rpm]`
 - `tool_strain` = `Torque [Nm]` * `Tool wear [min]`
 
 3. Data Pre-processing (Handling Imbalance)
